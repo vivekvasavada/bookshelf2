@@ -15,9 +15,9 @@ namespace bookshelf2.Models
         public string Decsription { get; set; }
         public string ISBN { get; set; }
 
-        [ForeignKey("category")]
+        [ForeignKey("Category")]
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
-        //navigation propertyj
+        //navigation property
     }
 }
